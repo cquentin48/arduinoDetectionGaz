@@ -10,10 +10,12 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, ssid, password);
  
 const char* host = "wifitest.adafruit.com";
 
-int ledPinRed = 15;
-int ledPinGreen = 16;
+int ledPinRed = 13;
+int ledPinGreen = 12;
+
 int gazPort = A0;
-int portBuzzer = 12;
+int portBuzzer = 14;
+
 int sensorLow = 0;
 int sensorHigh = 1023;
 AdafruitIO_Feed *RemoteButtons = io.feed("remote-buttons");
@@ -61,7 +63,7 @@ int getGazSensorValue(){
 }
 
 void displayResultData(int value){
-  if(value >= 1000){
+  if(value >= 500){
       alert();
       displayRedLed(ledPinRed);
   }else{
