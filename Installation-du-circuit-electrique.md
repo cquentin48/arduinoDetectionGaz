@@ -32,7 +32,7 @@ Pour construire le circuit on a utilisé :
    Les details de "pinnage" :
 ![](photos/20190408_105308.jpg)
    Diode rouge -> alert sur le pin 13 value de result >=1000 
-   Diode vert  ->12   value de result < 1000 
+   Diode vert  -> alert sur le pin 12 value de result < 1000 
 
 
 * La 2-ème étape : 
